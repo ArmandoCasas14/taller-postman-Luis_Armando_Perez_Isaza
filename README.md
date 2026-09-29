@@ -44,3 +44,8 @@ el caso de prueba paso ya que esperabamos un 404 ya que el elemento no existe en
 ### ¿qué pasaría si esa misma petición hubiera devuelto 200 con un cuerpo vacío? ¿Sería un defecto?
 si seria un defecto porque el codigo 200 significa se proceso correntamente pero al no devolver nada siendo un peticion tipo get seria un defecto ya que estaria vacion cuando esperabamos un elemneto 
 ## Crea un recurso con POST
+### ¿qué observaste? ¿Por qué crees que ocurre eso? ¿Cómo comprobarías, en una API real, que el recurso se creó de verdad?
+al ejecutarla 5 veces seguidas me devolvia el id 101 en cada una de las 5 ocasiones esto ocurre porque es una api gratuita orientada para temas academicos y para aprender sobre las apis en un api real me hubiera delvovido los ids 101,102,103,104 y 105 asi sumando el ultimo id del ultimo elemento cada vez que se ejecuta la peticion post
+## La diferencia entre PUT y PATCH
+### ¿qué diferencia encontraste entre ambas respuestas? ¿Cuál usarías para corregir un error de escritura en un solo campo, y por qué?
+el put reemplaza todo el objeto si mandas solo un campo por ejemplo tittle todo lo demas se borrara y quedara solo tittle y en patch es para actualizar parcialmente si manda tittle se actualizara y dejara los otros campos intactos, para corregir un error de escritura en un solo campo usaria patch ya que modificar los campos que se manda por ejemplo tittle y body si se manda esos dos son los unicos que se van a modificar los otros campos queda intactos
