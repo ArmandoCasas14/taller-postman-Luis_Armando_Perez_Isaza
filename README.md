@@ -1,4 +1,7 @@
 # taller-postman-Luis_Armando_Perez_Isaza
+**Estudiante:** Luis Armando Perez Isaza
+**Código:** 1007439945
+**Asignatura:** Ingeniería de Software II — Cotecnova
 ## Marco Conceptual 
 ### ¿Que es una API REST?
 Una API REST es una interfaz que permite que diferentes aplicaciones se comuniquen entre sí mediante peticiones HTTP. Utiliza métodos como GET, POST, PUT y DELETE para consultar, crear, actualizar o eliminar información de un servidor. Las API REST trabajan con recursos, por ejemplo productos o clientes, y comúnmente utilizan JSON para enviar y recibir los datos. En pocas palabras, permite que una aplicación pueda solicitar y manejar información de otra aplicación de una manera organizada y estandarizada.
