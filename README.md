@@ -49,3 +49,4 @@ al ejecutarla 5 veces seguidas me devolvia el id 101 en cada una de las 5 ocasio
 ## La diferencia entre PUT y PATCH
 ### ¿qué diferencia encontraste entre ambas respuestas? ¿Cuál usarías para corregir un error de escritura en un solo campo, y por qué?
 el put reemplaza todo el objeto si mandas solo un campo por ejemplo tittle todo lo demas se borrara y quedara solo tittle y en patch es para actualizar parcialmente si manda tittle se actualizara y dejara los otros campos intactos, para corregir un error de escritura en un solo campo usaria patch ya que modificar los campos que se manda por ejemplo tittle y body si se manda esos dos son los unicos que se van a modificar los otros campos queda intactos
+
