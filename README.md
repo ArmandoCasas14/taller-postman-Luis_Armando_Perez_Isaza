@@ -8,3 +8,13 @@ Un endpoint es la ubicación específica, normalmente una URL, donde una API rec
 [IBM-¿Que es un endpoint?](https://www.ibm.com/mx-es/think/topics/api-endpoint)
 ### Ejemplo 
 Un ejemplo muy común es WhatsApp. Cuando envías un mensaje, la aplicación se comunica con los servidores mediante diferentes APIs para enviar y recibir mensajes, compartir archivos, consultar información de contactos, realizar llamadas, etc. Por ejemplo, cuando envías una imagen, la aplicación realiza solicitudes al servidor mediante una API para subir la imagen y posteriormente permitir que el destinatario la descargue.
+## Los Metodos HTTP
+### Los métodos HTTP y el CRUD
+| Método | Operación CRUD | Qué hace |
+|---|---|---|
+| GET | Leer | Obtiene información de uno o varios registros |
+| POST | Crear | Crea un nuevo registro |
+| PUT | Actualizar | Actualiza completamente un registro |
+| PATCH | Actualizar | Actualiza parcialmente un registro |
+| DELETE | Eliminar | Elimina un registro |
+
