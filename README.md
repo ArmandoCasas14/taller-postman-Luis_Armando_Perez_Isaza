@@ -17,4 +17,15 @@ Un ejemplo muy común es WhatsApp. Cuando envías un mensaje, la aplicación se 
 | PUT | Actualizar | Actualiza completamente un registro |
 | PATCH | Actualizar | Actualiza parcialmente un registro |
 | DELETE | Eliminar | Elimina un registro |
-
+## Codigos de estados
+### Las familias de códigos de estado
+| Familia | Significado | Ejemplo |
+|---|---|---|
+| **1xx** | Respuestas informativas. Indican que la solicitud fue recibida y que el proceso continúa. | **100 Continue**: el servidor indica que el cliente puede continuar enviando la solicitud. |
+| **2xx** | Respuestas satisfactorias. Indican que la solicitud se procesó correctamente. | **200 OK**: la solicitud fue realizada correctamente. |
+| **3xx** | Redirecciones. Indican que el cliente debe realizar otra acción para completar la solicitud. | **301 Moved Permanently**: el recurso fue trasladado permanentemente a otra URL. |
+| **4xx** | Errores del cliente. La solicitud tiene algún problema relacionado con lo que envió o solicitó el cliente. | **404 Not Found**: el servidor no encuentra el recurso solicitado. |
+| **5xx** | Errores del servidor. El servidor tuvo un problema al intentar procesar una solicitud que recibió. | **500 Internal Server Error**: ocurrió un error interno inesperado en el servidor. |
+### ¿Por qué se separan los errores 4xx de los 5xx?
+La diferencia principal está en dónde se encuentra el problema. Los códigos 4xx indican que el problema está relacionado con la solicitud del cliente. Por ejemplo, si un usuario solicita una URL que no existe, el servidor puede responder con 404 Not Found. En cambio, los códigos 5xx indican que el servidor encontró un problema al intentar procesar una solicitud que recibió correctamente. Por ejemplo, un 500 Internal Server Error significa que el servidor encontró una situación inesperada que le impidió completar la solicitud.
+En otras palabras, 4xx normalmente significa "revisa lo que estás solicitando o enviando", mientras que 5xx significa "el servidor tuvo un problema al procesarlo". No significa necesariamente que una persona tenga literalmente la "culpa": es una forma de clasificar el origen del problema desde el punto de vista de HTTP.
