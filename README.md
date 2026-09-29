@@ -29,3 +29,18 @@ Un ejemplo muy común es WhatsApp. Cuando envías un mensaje, la aplicación se 
 ### ¿Por qué se separan los errores 4xx de los 5xx?
 La diferencia principal está en dónde se encuentra el problema. Los códigos 4xx indican que el problema está relacionado con la solicitud del cliente. Por ejemplo, si un usuario solicita una URL que no existe, el servidor puede responder con 404 Not Found. En cambio, los códigos 5xx indican que el servidor encontró un problema al intentar procesar una solicitud que recibió correctamente. Por ejemplo, un 500 Internal Server Error significa que el servidor encontró una situación inesperada que le impidió completar la solicitud.
 En otras palabras, 4xx normalmente significa "revisa lo que estás solicitando o enviando", mientras que 5xx significa "el servidor tuvo un problema al procesarlo". No significa necesariamente que una persona tenga literalmente la "culpa": es una forma de clasificar el origen del problema desde el punto de vista de HTTP.
+## Lee un recurso y la colección completa
+### El código de estado
+las dos peticiones fueron 200
+### Cuántos elementos trae la respuesta
+la primera solo trae un elemento y la segunda traes todos lo recursos 
+### Qué campos tiene cada elemento
+tiene los campos UserId, id, tittle y body 
+### ¿en qué se diferencian los criterios de aceptación cuando pides un recurso y cuando pides una colección?
+cuando pides un recurso tiene que poner un id para poder identificarlo y para una colecion solo tiene que ejecutar el endpoint
+## Provoca un error a propósito
+### ¿Este caso de prueba pasó o falló?
+el caso de prueba paso ya que esperabamos un 404 ya que el elemento no existe en la base de datos(pagina de prueba) y ejecutamos el endpoint y efectivamente fue un 404
+### ¿qué pasaría si esa misma petición hubiera devuelto 200 con un cuerpo vacío? ¿Sería un defecto?
+si seria un defecto porque el codigo 200 significa se proceso correntamente pero al no devolver nada siendo un peticion tipo get seria un defecto ya que estaria vacion cuando esperabamos un elemneto 
+## Crea un recurso con POST
